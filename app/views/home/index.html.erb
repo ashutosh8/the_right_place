@@ -1,0 +1,10 @@
+
+<h1>Welcome to The Right Place!</h1>
+<p><b>Our Products</b></p>
+<div>
+    <% @products.each do |product|%>
+    <ul>    
+        <li><a href="/products/<%= product.fields[:productName] %>"><%= product.fields[:productName] %></a></li>
+    </ul>
+    <% end %>
+</div>

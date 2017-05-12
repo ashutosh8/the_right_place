@@ -1,0 +1,13 @@
+<h1 align="center"><b><em><%= @about.fields[:companyName] %></em></b></h1>
+<div align="center">
+    <!--<img id="imglogo" width="20%" height="20%" src="<%= @logoimg %>"/>-->
+</div>
+<div>
+    <p><em><%= @about.fields[:companyDescription] %></em></p>
+    <br />
+</div>
+<div>
+   <p><em> Follow us at Twitter <b><%= @about.fields[:twitter] %></b></em></p>
+   <p><em> Email us for information <b><%= @about.fields[:email] %></b></em></p>
+   <p><em> Call us at <b><%= @about.fields[:phone][0] %></em></b></p>
+</div>
